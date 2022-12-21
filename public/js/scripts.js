@@ -72,8 +72,11 @@ $(function () {
     });
 
     $('#email').on("input", function(evt) {
-        console.log(this.value);
-        console.log(validate(this.value));
+        if (validate(this.value)) {
+            animateSubmitToValid()
+        } else {
+            animateSubmitToInvalid()
+        }
     })
 });
 
@@ -129,6 +132,19 @@ function addSpinner(el, static_pos)
   if (spinner.length && !spinner.hasClass('spinner-remove')) return null;
   !spinner.length && (spinner = $('<div class="spinner' + (static_pos ? '' : ' spinner-absolute') + '"/>').appendTo(el));
   animateSpinner(spinner, 'add');
+}
+
+function animateSubmitToValid() {
+    console.log("valid");
+//    $("#submit").animate({ "backgroundColor": "#7b3dff" }, 100);
+    $('#submit').css({ 'background-color':'#7b3dff' });
+    $("#submit").prop("disabled", false);
+}
+
+function animateSubmitToInvalid() {
+//    $("#submit").animate({ "backgroundColor": "#999999" }, 100);
+    $('#submit').css({ 'background-color':'#999999' });
+    $("#submit").prop("disabled", true);
 }
 
 function removeSpinner(el, complete)

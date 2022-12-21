@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
     <!-- Bootstrap CSS / Color Scheme -->
     <link rel="stylesheet" href="purple.css" id="theme-color">
 </head>
@@ -75,7 +78,7 @@
                     <form>
                         <input class="email" type="text" name="email" id="email" placeholder="name@email.com">
                         <input class="pointer" type="submit" id="submit" value="Join the waitlist"
-                            onclick="submitEmail(event)">
+                            onclick="submitEmail(event)" disabled>
                     </form>
                     <small id="success">We've added you! Check your email for confirmation.</small>
                     <div id="spinner"></div>

@@ -1,4 +1,4 @@
-﻿/*!
+/*!
 * Created by Kroplet (https://www.kroplet.com)
 * The easiest way to create Bootstrap 4 themes.
 */
@@ -85,6 +85,11 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem; }
+
+#submit {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
 
 abbr[title],
 abbr[data-original-title] {
@@ -370,7 +375,7 @@ input[type="submit"] {
     margin-left: -154px;
     height: 40px;
     width: 150px;
-    background: #7b3dff;
+    background: #999999;
     color: white;
     border: 0;
     font-weight: 300;
@@ -394,7 +399,7 @@ input[type="submit"] {
         margin-left: -90px;
         height: 41px;
         width: 150px;
-        background: #7b3dff;
+        background: #999999;
         color: white;
         border: 0;
         font-weight: 300;
